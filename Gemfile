@@ -51,7 +51,7 @@ gem 'refinerycms-search', '~> 2.1.0'
 gem 'refinerycms-page-images', '~> 2.1.0'
 gem "refinerycms-news", '~> 2.1.0'
 #gem 'refinerycms-portfolio', :git => 'git://github.com/refinery/refinerycms-portfolio.git', :branch => '2-0-stable'
-gem 'refinerycms-videojs', git: 'git@github.com:adexin-team/refinerycms-videojs.git'
+gem 'refinerycms-videojs'
 #gem 'refinerycms-memberships', '2.0'
 #gem 'refinerycms-calendar', '~>2.0.0'
 
