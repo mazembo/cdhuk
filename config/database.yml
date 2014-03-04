@@ -28,6 +28,6 @@ production:
   adapter: postgresql
   encoding: unicode
   database: refinery_development
-  username:
-  password:
-  host:
+  username: postgres
+  password: nditukulu
+  host: localhost
