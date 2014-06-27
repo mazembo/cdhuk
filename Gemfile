@@ -27,7 +27,7 @@ end
 #end
 # Use SCSS for stylesheets
 gem 'sass-rails'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '3.1'
 
 gem 'jquery-rails'
 
