@@ -32,7 +32,7 @@ gem 'bootstrap-sass', '3.1'
 gem 'jquery-rails'
 
 gem 'turbolinks'
-
+gem 'rails_12factor', group: :production
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
