@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Centre de Droits de l'homme de l'université Kongo</title>
+  <title>Centre de Droits de l'homme de l'université Kongo - CDHUK</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  
 </head>
 <body>
-<div class="container">
-<div class="navbar-wrapper">
+<!-- Navigation Bar Starts -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
-
-    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-
-          <a class="navbar-brand" href="/">CDH-UK</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Accueil</a></li>
-            <li><a href="/blog">Réflexions</a></li>
-            <li><a href="/projets">Projets</a></li>
-            <li><a href="/news"><li>Évènements et Opportunités</a></li>
-            <li><a href="/contact">Contact</a></li>
-
-          </ul>
-        </div>
-      </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="/">CDHUK</a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="/">Accueil</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/blog">Reflexions</a></li>
+        <li><a href="/news">Evenements et Opportunites</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </div>
-
+    <!--/.nav-collapse --> 
+    
   </div>
 </div>
+<!--// Navbar Ends--> 
 
-
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- BANNER SLIDER
+    ================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -44,59 +39,244 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="item active">
-      <%= image_tag ("rectorat.jpg"), class: "tales" %>
+    <div class="item slide-one active">
       <div class="container">
+        <%= image_tag ("rectorat.jpg"), class: "tales" %>
         <div class="carousel-caption">
-          <h1>Institution de recherche dans le bas-Congo</h1>
-          <p>Créé en décembre 2010 sur décision rectorale no. UK/KK/018/2010, le Centre des droits de l’homme de l’Université Kongo (UK), CDHUK en sigles, est une institution de recherche qui entend participer activement à l’étude, a la vulgarisation et à la promotion des droits de l’homme en République Démocratique du Congo en général et dans la province du Bas-Congo en particulier.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Lire davantage</a></p>
+          <h3>RECTORAT DE L'UNIVERSITE KONGO</h3>
+          <h1>Excellence, Solidarité, Développement</h1>
+          
+          <p><a class="btn btn-giant btn-primary" href="#" role="button">LIRE DAVANTAGE</a></p>
         </div>
       </div>
     </div>
-    <div class="item">
+    <div class="item slide-two">
       <%= image_tag ("etudiants_et_bus.jpg"), class: "tales" %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Avec le soutien de la province du Bas-Congo</h1>
-          <p>La vision du CDHUK est de rapprocher la communauté universitaire de l’UK des populations défavorisées.  Sa mission est d’articuler la recherche, la documentation, la formation en droits de l’homme, ainsi que leur vulgarisation.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Lire davantage</a></p>
+          <h2>ETUDIANTS A COTE DU BUS</h2>
+          <p class="lead">Le bus, don du gouvernorat de la province du Bas-Congo</p>
+          <p><a class="btn btn-lg btn-primary" href="ministry.html" role="button">LIRE DAVANTAGE &rarr;</a></p>
         </div>
       </div>
     </div>
-    <div class="item">
+    <div class="item slide-three">
       <%= image_tag ("lumbika_et_partenaire.jpg"), class: "tales" %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Partenariat avec des équipes de recherche internationales</h1>
-          <p>En cours depuis 2007 à l’Université d’Anvers, ce projet de ‘localisation des droits de l’homme’ est mené en partenariat avec des équipes de recherche internationales, notamment en Inde, Chine et RDC.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Lire davantage</a></p>
+          <h2>SIGNATURE D'UN PARTENARIAT</h2>
+          <p class="lead">Le CDHUK en partenariat avec des institutions nationales et internationales</p>
+          <p><a class="btn btn-lg btn-primary" href="image-gallery.html" role="button">LIRE DAVANTAGE &rarr;</a></p>
         </div>
       </div>
     </div>
-    <div class="item">
+    <div class="item slide-four">
       <%= image_tag ("group_photo_with_students.jpg"), class: "tales" %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Caravane des droits de l’homme</h1>
-          <p>Il a été observé que les populations locales qui entourent l’Université Kongo  engagent beaucoup de temps et d’argent à répondre aux tracasseries des dépositaires du pouvoir (administration territoriale, police, justice, fisc, etc.). D’où  l’intérêt de les informer et de les former sur les droits.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Lire davantage</a></p>
+          <h2>Etudiants du CDHUK</h2>
+          <p class="lead">Le Centre entend former les practiciens, chercheurs et défenseurs des droits de l'homme </p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">LIRE DAVANTAGE &rarr;</a></p>
         </div>
       </div>
     </div>
   </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div><!-- /.carousel -->
-
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
+<!-- // Banner Slider --> 
+<div class="container">
 <%= yield %>
+</div> 
+<!--UPCOMING EVENT-->
 
+<div class="highlight-bg has-margin-bottom">
+  <div class="container event-cta">
+    <div class="ec-txt"> <span>REFLEXIONS ET PUBLICATIONS</span>
+      <p>"Tous les êtres humains naissent libres et égaux en dignité et en droits. Ils sont doués de raison et de conscience et doivent agir les uns envers les autres dans un esprit de fraternité. " - Déclaration universelle des droits de l'homme</p>
+    </div>
+    <a class="btn btn-lg btn-primary" href="/blog" role="button">REFLEXIONS, LIRE DAVANTAGE </a> </div>
+</div>
+
+<!-- // UPCOMING EVENT --> 
+
+<!--FEATURED BLOCK-->
+<div class="container">
+  <div class="row feature-block">
+    <div class="col-md-4 col-sm-6 has-margin-bottom"> <img class="img-responsive" src="images/thumb-1.jpg" alt="catholic church">
+      <h3>Localiser les droits de l'homme...</h3>
+      <p>Cette brève contribution vise à faire la lumière sur la façon dont l'UNICEF adapte son approche fondée sur les droits de l'homme (ABDH) aux réalités locales des détenteurs de droits, dans le cas de la RDC où il soutient le projet ‘Villages</p>
+      <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-4 col-sm-6 has-margin-bottom"> <img class="img-responsive" src="images/thumb-2.jpg" alt="ministry sermon">
+      <h3>La protection des droits de l'homme par la cooperation au developpement</h3>
+      <p>L’irruption des droits de l’homme dans la coopération belgo-congolaise est le reflet des tendances internationales des années 1990. L’intégration des droits de l’homme dans la coopération belgo-congolaise est un accident, qui va au gré du</p>
+      <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0 center-this has-margin-bottom"> <img class="img-responsive" src="images/thumb-3.jpg" alt="bulletin programs">
+      <h3>Kinkimba kia Kongo, une loge? Parlons-en.</h3>
+      <p>Dans les milieux réellement « intellectuels », les questions qui fâchent ne se traitent pas de façon épidermique ou émotionnelle. Elles donnent lieu à un débat logique où les intelligences s’affrontent. Arguments contre arguments, les esprits qui.</p>
+      <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
+    </div>
+    <!-- /.col-md-4 --> 
+  </div>
+</div>
+<!-- // END FEATURED BLOCK--> 
+
+<!--EVENT LISTS-->
+<div class="highlight-bg has-margin-bottom">
+  <div class="container event-list">
+    <div class="section-title">
+      <h4>EVENEMENTS ET OPPORTUNITES</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="owl-carousel">
+          <div class="el-block item">
+            <h4> JULY 16 </h4>
+            <p class="el-head">ANNONCE NUMERO UN </p>
+            <span>Monday 07:00 AM</span>
+            <p class="el-cta"><a class="btn btn-primary" href="event-single.html" role="button">Details &rarr;</a></p>
+          </div>
+          <div class="el-block item">
+            <h4> JUL 29 </h4>
+            <p class="el-head">ANNONCE NUMERO DEUX</p>
+            <span>Thursday 02:00 PM</span>
+            <p class="el-cta"><a class="btn btn-primary" href="event-single.html" role="button">Details &rarr;</a></p>
+          </div>
+          <div class="el-block item">
+            <h4> SEP 19 </h4>
+            <p class="el-head">ANNONCE NUMERO TROIS</p>
+            <span>Saturday 10:00 AM</span>
+            <p class="el-cta"><a class="btn btn-primary" href="event-single.html" role="button">Details &rarr;</a></p>
+          </div>
+          <div class="el-block item">
+            <h4> OCT 14 </h4>
+            <p class="el-head">God's irresistable grace</p>
+            <span>Sunday 11:00 AM</span>
+            <p class="el-cta"><a class="btn btn-primary" href="event-single.html" role="button">Details &rarr;</a></p>
+          </div>
+          <div class="el-block item">
+            <h4> JULY 16 </h4>
+            <p class="el-head">Weekly meeting &amp; prayer</p>
+            <span>Monday 07:00 AM</span>
+            <p class="el-cta"><a class="btn btn-primary" href="event-single.html" role="button">Details &rarr;</a></p>
+          </div>
+          <div class="el-block item">
+            <h4> JUL 29 </h4>
+            <p class="el-head">Show me your faith</p>
+            <span>Thursday 02:00 PM</span>
+            <p class="el-cta"><a class="btn btn-primary" href="event-single.html" role="button">Details &rarr;</a></p>
+          </div>
+          <div class="el-block item">
+            <h4> SEP 19 </h4>
+            <p class="el-head">Perseravance of the saints</p>
+            <span>Saturday 10:00 AM</span>
+            <p class="el-cta"><a class="btn btn-primary" href="event-single.html" role="button">Details &rarr;</a></p>
+          </div>
+          <div class="el-block item">
+            <h4> OCT 14 </h4>
+            <p class="el-head">God's irresistable grace</p>
+            <span>Sunday 11:00 AM</span>
+            <p class="el-cta"><a class="btn btn-primary" href="event-single.html" role="button">Details &rarr;</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // END EVENT LISTS --> 
+
+<!-- BLOG LIST / LATEST SERMONS -->
+<div class="container has-margin-bottom">
+  <div class="row">
+    <div class="col-md-9 has-margin-bottom">
+            
+      <!--Blog list-->
+      
+      <div class="row has-margin-bottom">
+        <div class="col-md-4 col-sm-4"> <img class="img-responsive center-block" src="images/blog-thumb-1.jpg" alt="bulletin blog"> </div>
+        <div class="col-md-8 col-sm-8 bulletin">
+          <h4 class="media-heading">Perseverance of the Saints </h4>
+          <p>on 17th June 2014 by <a href="#" class="link-reverse">Vincent John</a></p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet...</p>
+          <a class="btn btn-primary" href="blog-single.html" role="button">Read Article →</a> </div>
+      </div>
+      
+      <!--Blog list-->
+      
+      <div class="row">
+        <div class="col-md-4 col-sm-4"> <img class="img-responsive center-block" src="images/blog-thumb-2.jpg" alt="bulletin blog"> </div>
+        <div class="col-md-8 col-sm-8 bulletin">
+          <h4 class="media-heading">Lord is Sufficient for all of our needs </h4>
+          <p>on 17th June 2014 by <a href="#" class="link-reverse">Jose Mathew</a></p>
+          <p class="media-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet...</p>
+          <a class="btn btn-primary" href="blog-single.html" role="button">Read Article →</a> </div>
+      </div>
+    </div>
+    <!--// col md 9--> 
+    
+  </div>
+
+
+<!--OUR GALLERY-->
+<div class="container has-margin-bottom">
+  <div class="section-title">
+    <h4> NOS PHOTOS </h4>
+  </div>
+  <div class="img-gallery row">
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_1.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_1.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_2.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_2.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_3.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_3.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_4.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_4.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_5.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_5.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_6.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_6.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_7.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_7.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_8.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_8.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+  </div>
+</div>
+<!--// END OUR GALLERY --> 
 
 <!-- FOOTER -->
 <footer>
-  <p class="pull-right"><a href="#">Retour en haut</a></p>
-  <p>&copy; 2014 Centre des Droits de l'homme de l'Université Kongo. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <h5>UN MOT SUR LE CDHUK</h5>
+        <p>La vision du CDHUK est de rapprocher la communauté universitaire de l’UK des populations défavorisées. Sa mission est d’articuler la recherche, la documentation, la formation en droits de l’homme, ainsi que leur vulgarisation. </p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>LIENS RAPIDES</h5>
+        <ul class="footer-links">
+          <li><a href="/projects">PROJETS</a></li>
+          <li><a href="/blog">REFLEXIONS ET PUBLICATIONS</a></li>
+          <li><a href="/news">EVENEMENTS ET OPPORTUNITES</a></li>
+          <li><a href="/contact">CONTACTEZ-NOUS</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>NOTRE ADRESSE</h5>
+        <p>Centre des droits de l'homme de l'universite Kongo <br>
+          Université Kongo, Avenue Kolo, No 23, B.P. 80 <br>
+          Mbanza-Ngungu, Province du Bas-Congo, RDC<br>
+          <br>
+          Tél. +243816181183<br>
+          Email: <a href="#">richlumbika@yahoo.fr</a></p>
+          
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>CONNECT</h5>
+        <div class="social-icons"><a href="#"><img src="images/fb-icon.png" alt="social"></a> <a href="#"><img src="images/tw-icon.png" alt="social"></a> <a href="#"><img src="images/in-icon.png" alt="social"></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <p class="text-center">2014 Tous droits reservés</p>
+    </div>
+  </div>
 </footer>
+
 
 </div><!-- /.container -->
 
@@ -108,5 +288,53 @@
 <script src="../../dist/js/bootstrap.min.js"></script>
 <script src="../../docs-assets/js/holder.js"></script>
 </div>
+<!--============== EVENT CAROUSEL =================--> 
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+	navText: [
+      "<span class='nav-arrow left'></i>",
+      "<span class='nav-arrow right'></i>"
+      ],
+    responsive:{
+        0:{
+            items:1
+        },
+		550:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        992:{
+            items:4
+        }
+    }
+})
+
+$('.owl-carousel2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+	navText: false,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
+</script> 
+
+<!--============== IMAGE GALLERY =================--> 
+
+<script>
+$(document).ready(function() {
+ $('.fancybox').fancybox();			
+});			
+</script> 
+
 </body>
 </html>
