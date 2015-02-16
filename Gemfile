@@ -26,8 +26,8 @@ end
  gem 'uglifier', '>= 1.0.3'
 #end
 # Use SCSS for stylesheets
-gem 'sass-rails'
-gem 'bootstrap-sass', '3.1'
+gem 'bootstrap-sass', '3.1.1.0'
+gem 'sass-rails', '>= 3.2'
 
 gem 'jquery-rails'
 
@@ -62,6 +62,7 @@ gem "refinerycms-news", '~> 2.1.0'
 gem 'refinerycms-videojs'
 #gem 'refinerycms-memberships', '2.0'
 #gem 'refinerycms-calendar', '~>2.0.0'
+#gem 'refinerycms-bootstrap', :github => 'fernandoaleman/refinerycms-bootstrap', :branch => 'master'
 
 
 
