@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="le site internet du centre des droits de l'homme de l'universite Kongo">
+<meta name="keywords" content="universite Kongo, Centre des droits de l'homme de l'universite Kongo, programmes du Centre des droits de l'homme de l'universite Kongo, CDH-UK, Bas-Congo, Droits de l'homme et developpement, Localisation des droits de l'homme, Droits des communautes locales ">
+<meta name="author" content="Richard Lumbika, Sundi Mbambi Pascal, Mazembo Mavungu Eddy ">
   <title>Centre de Droits de l'homme de l'université Kongo - CDHUK</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -13,7 +18,7 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="/">CDHUK  Site sous amélioration</a> </div>
+      <a class="navbar-brand" href="/"><%= image_tag ("cdhuk.png") %></a> </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="/">ACCUEIL</a></li>
@@ -41,7 +46,7 @@
   <div class="carousel-inner">
     <div class="item slide-one active">
       <div class="container">
-        <%= image_tag ("rectorat.jpg"), class: "tales" %>
+        <%= image_tag ("photo_devant_rectorat.jpg"), class: "tales" %>
         <div class="carousel-caption">
           <h3>RECTORAT DE L'UNIVERSITE KONGO</h3>
           <h1>Excellence, Solidarité, Développement</h1>
@@ -61,17 +66,17 @@
       </div>
     </div>
     <div class="item slide-three">
-      <%= image_tag ("lumbika_et_partenaire.jpg"), class: "tales" %>
+      <%= image_tag ("autorite_coutumiere.jpg"), class: "tales" %>
       <div class="container">
         <div class="carousel-caption">
-          <h2>SIGNATURE D'UN PARTENARIAT</h2>
-          <p class="lead">Le CDHUK en partenariat avec des institutions nationales et internationales</p>
+          <h2>ENGAGE AVEC LES INSTITUTIONS COMMUNAUTAIRES</h2>
+          <p class="lead">Le CDHUK s'engage dans la promotion des droits liés a la santé, l'education et les besoins de base </p>
           <p><a class="btn btn-lg btn-primary" href="image-gallery.html" role="button">LIRE DAVANTAGE &rarr;</a></p>
         </div>
       </div>
     </div>
     <div class="item slide-four">
-      <%= image_tag ("group_photo_with_students.jpg"), class: "tales" %>
+      <%= image_tag ("profs_etudiants.jpg"), class: "tales" %>
       <div class="container">
         <div class="carousel-caption">
           <h2>Etudiants du CDHUK</h2>
@@ -101,19 +106,19 @@
 <!--FEATURED BLOCK-->
 <div class="container">
   <div class="row feature-block">
-    <div class="col-md-4 col-sm-6 has-margin-bottom"> <img class="img-responsive" src="images/thumb-1.jpg" alt="catholic church">
+    <div class="col-md-4 col-sm-6 has-margin-bottom"><%= image_tag ("maternite_nsumba_petit.jpg"), class: "img-responsive", alt: "visite de CDHUK a la maternite Nsumba" %>
       <h3>Localiser les droits de l'homme...</h3>
       <p>Cette brève contribution vise à faire la lumière sur la façon dont l'UNICEF adapte son approche fondée sur les droits de l'homme (ABDH) aux réalités locales des détenteurs de droits, dans le cas de la RDC où il soutient le projet ‘Villages</p>
       <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
     </div>
     <!-- /.col-md-4 -->
-    <div class="col-md-4 col-sm-6 has-margin-bottom"> <img class="img-responsive" src="images/thumb-2.jpg" alt="ministry sermon">
+    <div class="col-md-4 col-sm-6 has-margin-bottom"><%= image_tag ("visite_sur_terrain.jpg"), class: "img-responsive", alt: "travail sur terrain au CDHUK" %>
       <h3>La protection des droits de l'homme par la cooperation au developpement</h3>
       <p>L’irruption des droits de l’homme dans la coopération belgo-congolaise est le reflet des tendances internationales des années 1990. L’intégration des droits de l’homme dans la coopération belgo-congolaise est un accident, qui va au gré du</p>
       <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
     </div>
     <!-- /.col-md-4 -->
-    <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0 center-this has-margin-bottom"> <img class="img-responsive" src="images/thumb-3.jpg" alt="bulletin programs">
+    <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0 center-this has-margin-bottom"><%= image_tag ("conference_370.jpg"), class: "img-responsive", alt: "conference-debat au CDHUK" %>
       <h3>Kinkimba kia Kongo, une loge? Parlons-en.</h3>
       <p>Dans les milieux réellement « intellectuels », les questions qui fâchent ne se traitent pas de façon épidermique ou émotionnelle. Elles donnent lieu à un débat logique où les intelligences s’affrontent. Arguments contre arguments, les esprits qui.</p>
       <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
@@ -131,14 +136,14 @@
     <h4> NOS PHOTOS </h4>
   </div>
   <div class="img-gallery row">
-    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_1.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_1.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
-    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_2.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_2.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
-    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_3.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_3.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
-    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_4.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_4.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
-    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_5.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_5.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
-    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_6.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_6.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
-    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_7.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_7.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
-    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="images/gallery/img_gallery_8.jpg" data-fancybox-group="gallery" title="church image gallery"> <img src="images/gallery/thumb/gallery_thumb_8.jpg" class="img-responsive" width="270" height="270" alt="church image gallery"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <img src="/assets/gallery1.jpg" class="img-responsive" width="270" height="270" alt="conference-debat au CDHUK"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <img src="/assets/gallery2.jpg" class="img-responsive" width="270" height="270" alt="visite avec un partenaire belge"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <img src="/assets/gallery3.jpg" class="img-responsive" width="270" height="270" alt="Prof Richard Lumbika et un partenaire belge"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <img src="/assets/gallery4.jpg" class="img-responsive" width="270" height="270" alt="etudiants et membres de la communaute"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <img src="/assets/gallery5.jpg" class="img-responsive" width="270" height="270" alt="etudiants et membres de la communaute"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <img src="/assets/gallery6.jpg" class="img-responsive" width="270" height="270" alt="etudiants et notre partenaire belge"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <img src="/assets/gallery7.jpg" class="img-responsive" width="270" height="270" alt="Le CDHUK et une autorite coutumiere"> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <img src="/assets/gallery8.jpg" class="img-responsive" width="270" height="270" alt="Le CDHUK et une autorite coutumiere"> </a> </div>
   </div>
 </div>
 <!--// END OUR GALLERY --> 
